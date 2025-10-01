@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Optional;
 
 public interface EmpresaRepository extends JpaRepository<EmpresaModel, Integer> {
-    Optional<EmpresaModel> FindByCdEmpresa (Integer cdEmpresa);
-    Optional<EmpresaModel> FindByNuCnpj (Integer nuCnpj);
+    Optional<EmpresaModel> findByCdEmpresa(Integer cdEmpresa);
+    Optional<EmpresaModel> findByNuCnpj(String nuCnpj);
 
     @Query("SELECT emp FROM EmpresaModel emp WHERE emp.flAtivo = 'S'")
     List<EmpresaModel> findAllByFlAtivo();

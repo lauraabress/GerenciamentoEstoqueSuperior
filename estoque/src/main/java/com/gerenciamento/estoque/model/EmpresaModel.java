@@ -44,7 +44,7 @@ public class EmpresaModel {
     @Column(name = "NUENDERECO")
     private Integer nuEndereco;
 
-    @Column(name = "FLATIVO", length = 1, nullable = false      )
+    @Column(name = "FLATIVO", length = 1, nullable = false)
     private String flAtivo;
 
 }
