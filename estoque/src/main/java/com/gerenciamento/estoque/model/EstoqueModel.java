@@ -21,10 +21,10 @@ public class EstoqueModel {
     @Column (name = "CDLOCALESTOQUE")
     private Integer cdLocalEstoque;
 
-    @Column (name = "QTATIVO")
-    private Integer qtAtivo;
+    @Column (name = "QTEstoque")
+    private Integer qtEstoque;
 
-    @Column (name = "FLATIVO")
+    @Column (name = "FLATIVO", length = 1, nullable = false)
     private String flAtivo;
 
 }

@@ -22,6 +22,6 @@ public class ProdutoModel {
     @Column (name = "DSPRODUTO")
     private String dsProduto;
 
-    @Column (name = "FLATIVO")
+    @Column (name = "FLATIVO", length = 1, nullable = false)
     private String flAtivo;
 }
